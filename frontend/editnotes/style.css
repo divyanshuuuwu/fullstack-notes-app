@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f8f4ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 500px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e6d9c7;
+}
+
+.titleOld,
+.dateOld,
+.descriptionOld {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6b4f3b;
+    margin-bottom: 8px;
+}
+
+.titleNew,
+.dateNew,
+.descriptionNew {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #d9c8b4;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #fffdf9;
+    transition: 0.2s;
+}
+
+.titleNew:focus,
+.dateNew:focus,
+.descriptionNew:focus {
+    border-color: #b99570;
+    box-shadow: 0 0 5px rgba(185, 149, 112, 0.3);
+}
+
+.descriptionNew {
+    min-height: 140px;
+    resize: vertical;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.savebtn {
+    background-color: #b99570;
+    color: white;
+    margin-right: 10px;
+}
+
+.savebtn:hover {
+    background-color: #a88561;
+}
+
+.cancelbtn {
+    background-color: #e9dfd2;
+    color: #6b4f3b;
+}
+
+.cancelbtn:hover {
+    background-color: #d9cebf;
+}

@@ -97,3 +97,16 @@ button:active{
     transition: 0.25s ease;
 
 }
+
+.edit-btn{
+    padding: 8px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    color: blue;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}

@@ -40,6 +40,31 @@ app.delete("/show/:id", async(req,res)=>{
 })
 
 
+app.put("/show/:id", async(req,res)=>{
+    const id = req.params.id
+    const newtitle = req.body.title
+    const newdata = req.body.date
+    const newdescription = req.body.description
+    console.log(id)
+    await noteModel.findByIdAndUpdate(
+        {_id: id} , {title:newtitle, date:newdata, description:newdescription} 
+    )
+     res.status(200).json({
+        message:"updated sucessfully"
+    })
+})
+
+app.get("/show/:id", async(req , res)=>{
+    const id = req.params.id
+    const data = await noteModel.findById({
+        _id:id
+    })
+        return res.status(200).json({
+            message: "data fetched successfully",
+            note : data,
+            
+    })
+})
 
 
 

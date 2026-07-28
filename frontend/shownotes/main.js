@@ -30,6 +30,24 @@ async function showNotes(){
                 
             })
 
+            // const editbtn = document.createElement("button")
+            // editbtn.classList.add("edit-btn")
+            // editbtn.textContent = "Edit"
+            // div.appendChild(editbtn)
+            // editbtn.addEventListener("click",function(){
+            //     const response
+            // })
+
+            const link = document.createElement("a");
+            const editbtn = document.createElement("button");
+
+            link.href = `http://127.0.0.1:5500/frontend/editnotes/index.html?id=${note._id}`;
+            editbtn.textContent = "Edit";
+            link.appendChild(editbtn);
+            div.appendChild(link);
+            editbtn.classList.add("edit-btn")
+
+
 
     })
 
